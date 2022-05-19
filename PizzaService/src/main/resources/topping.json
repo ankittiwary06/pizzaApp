@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Black olive",
+    "price": 20,
+    "veg": true
+  },
+  {
+    "name": "Capsicum",
+    "price": 25,
+    "veg": true
+  },
+  {
+    "name": "Extra cheese",
+    "price": 35,
+    "veg": true
+  },
+  {
+    "name": "Paneer",
+    "price": 35,
+    "veg": true
+  },
+  {
+    "name": "Mushroom",
+    "price": 30,
+    "veg": true
+  },
+  {
+    "name": "Fresh tomato",
+    "price": 10,
+    "veg": true
+  },
+  {
+    "name": "Chicken tikka",
+    "price": 35,
+    "veg": false
+  },
+  {
+    "name": "Barbeque chicken",
+    "price": 45,
+    "veg": false
+  },
+  {
+    "name": "Grilled chicken",
+    "price": 40,
+    "veg": false
+  }
+
+]

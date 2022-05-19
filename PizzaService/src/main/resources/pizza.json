@@ -1,0 +1,16 @@
+[
+  {
+   "name": "Deluxe Veggie",
+    "smallPrice": 150,
+    "mediumPrice":200 ,
+    "largePrice": 325,
+    "veg": true
+  },
+  {
+    "name": "Veggie",
+    "smallPrice": 150,
+    "mediumPrice": 150,
+    "largePrice": 150,
+    "veg": true
+  }
+]

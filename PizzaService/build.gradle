@@ -1,0 +1,25 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.7'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.vikasietum'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation group: 'org.springframework', name: 'spring-web', version: '5.3.19'
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
+
+	testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+	testImplementation group: 'org.mockito', name: 'mockito-all', version: '1.8.4'
+
+}
+

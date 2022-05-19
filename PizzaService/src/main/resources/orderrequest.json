@@ -1,0 +1,35 @@
+{
+  "orderItems": [
+    {
+      "pizzaRequest": {
+        "pizza": {
+          "name": "Deluxe Veggie",
+          "smallPrice": 150,
+          "mediumPrice":200,
+          "largePrice": 300,
+          "size":"small",
+          "veg": true
+        },
+        "crust": "Fresh pan pizza"
+      },
+      "toppings": [
+        {
+          "name": "Black olive",
+          "price": 20,
+          "veg": true
+        },
+        {
+          "name": "Capsicum",
+          "price": 25,
+          "veg": true
+        }
+      ],
+      "sideItems": [
+        {
+          "name": "Cold drink",
+          "price": "55"
+        }
+      ]
+    }
+  ]
+}
