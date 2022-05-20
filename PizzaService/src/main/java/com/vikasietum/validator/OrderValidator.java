@@ -20,7 +20,7 @@ public class OrderValidator {
         boolean type;
         while (it.hasNext()) {
             if (!validateOrderItem(it.next())) ;
-            throw new OrderNotValidException();
+            throw new OrderNotValidException("order is not valid");
         }
     }
 
@@ -36,6 +36,7 @@ public class OrderValidator {
     public boolean validateOrderItem(OrderItem orderItem) {
         List<String> toppingsNotAllowed = Arrays.asList(nonVegToppingNotAllowed.split(","));
         boolean vegPizza = orderItem.getPizzaRequest().getPizza().isVeg();
+
         int nonVegTopping = 0;
         for (Topping topping : orderItem.getToppings()) {
             if (vegPizza)

@@ -13,13 +13,12 @@ import org.springframework.http.ResponseEntity;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @RunWith(MockitoJUnitRunner.class)
 public class MenuControllerTest {
     @InjectMocks
-    MenuController menuController=new MenuController();
+    MenuController menuController = new MenuController();
     @Mock
     MenuService menuService;
 
@@ -32,10 +31,10 @@ public class MenuControllerTest {
         menu.setCrusts(crusts);
         Mockito.when(menuService.getMenu()).thenReturn(menu);
 
-        ResponseEntity<Menu> menuResponseEntity=menuController.getMenu();
-        Menu menuResponse=menuResponseEntity.getBody();
-        assert menuResponse.getCrusts().get(0)==menu.getCrusts().get(0);
-        assert menuResponse.getCrusts().get(1)==menu.getCrusts().get(1);
+        ResponseEntity<Menu> menuResponseEntity = menuController.getMenu();
+        Menu menuResponse = menuResponseEntity.getBody();
+        assert menuResponse.getCrusts().get(0) == menu.getCrusts().get(0);
+        assert menuResponse.getCrusts().get(1) == menu.getCrusts().get(1);
 
     }
 }

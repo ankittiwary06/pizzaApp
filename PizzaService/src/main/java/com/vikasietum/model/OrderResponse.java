@@ -1,8 +1,8 @@
 package com.vikasietum.model;
 
 public class OrderResponse {
-   private  String orderId;
-   private  Double orderCost;
+    private String orderId;
+    private Double orderCost;
 
     public String getOrderId() {
         return orderId;
@@ -18,7 +18,7 @@ public class OrderResponse {
 
     public OrderResponse(String orderId, Double orderCost) {
         this.orderId = orderId;
-        this.orderCost=orderCost;
+        this.orderCost = orderCost;
     }
 
     public void setOrderId(String orderId) {

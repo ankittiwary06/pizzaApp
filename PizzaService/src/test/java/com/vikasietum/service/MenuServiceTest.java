@@ -1,17 +1,13 @@
 package com.vikasietum.service;
 
-import com.vikasietum.model.*;
+import com.vikasietum.model.Menu;
+import com.vikasietum.model.Pizza;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import java.io.IOException;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
 
 @RunWith(MockitoJUnitRunner.class)
 public class MenuServiceTest {
@@ -43,9 +39,9 @@ public class MenuServiceTest {
         menuservice.setPizzaFilePath("C:\\Ankit\\project\\PizzaService\\PizzaService\\src\\test\\resources\\pizza.json");
         menuservice.setToppingFilePath("C:\\Ankit\\project\\PizzaService\\PizzaService\\src\\test\\resources\\topping.json");
         menuservice.setSideItemFilePath("C:\\Ankit\\project\\PizzaService\\PizzaService\\src\\test\\resources\\sideitem.json");
-        menu=menuservice.getMenu();
+        menu = menuservice.getMenu();
         Pizza pizza;
-        pizza=menu.getPizzas().get(0);
+        pizza = menu.getPizzas().get(0);
         //assert menu.getPizzas().get(0).get.equals("Deluxe Veggie");
     }
 

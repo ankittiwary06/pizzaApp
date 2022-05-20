@@ -1,18 +1,24 @@
 package com.vikasietum.model;
 
+import java.util.Comparator;
+
 public class Topping {
 
     String name;
-    int price;
+    Double price;
     boolean veg;
 
-    public Topping(int price, boolean veg) {
+    public Topping(Double price, boolean veg) {
         this.price = price;
         this.veg = veg;
     }
 
-    public int getPrice() {
+    public Double getPrice() {
         return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 
     public String getName() {
@@ -27,3 +33,7 @@ public class Topping {
         return veg;
     }
 }
+
+
+
+

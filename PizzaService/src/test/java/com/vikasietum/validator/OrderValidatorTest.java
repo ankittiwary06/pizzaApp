@@ -5,7 +5,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.ArrayList;
@@ -24,18 +23,18 @@ public class OrderValidatorTest {
         Pizza pizza = new Pizza();
         pizza.setName("Deluxe Veggie");
         pizza.setVeg(true);
-        PizzaRequest pizzaRequest=new PizzaRequest();
+        PizzaRequest pizzaRequest = new PizzaRequest();
         pizzaRequest.setPizza(pizza);
         pizzaRequest.setCrust("Cheese burst");
         SideItem sideItem = new SideItem();
         sideItem.setName("Cold drink");
         List<SideItem> sideItemsList = new ArrayList<>();
         sideItemsList.add(sideItem);
-        Topping topping=new Topping(20,true);
-        List<Topping> toppingList=new ArrayList<>();
+        Topping topping = new Topping(20.0, true);
+        List<Topping> toppingList = new ArrayList<>();
         toppingList.add(topping);
 
-        OrderItem orderItem=new OrderItem();
+        OrderItem orderItem = new OrderItem();
         orderItem.setSideItems(sideItemsList);
         orderItem.setToppings(toppingList);
         orderItem.setPizzaRequest(pizzaRequest);
@@ -53,18 +52,18 @@ public class OrderValidatorTest {
         Pizza pizza = new Pizza();
         pizza.setName("Deluxe Veggie");
         pizza.setVeg(true);
-        PizzaRequest pizzaRequest=new PizzaRequest();
+        PizzaRequest pizzaRequest = new PizzaRequest();
         pizzaRequest.setPizza(pizza);
         pizzaRequest.setCrust("Cheese burst");
         SideItem sideItem = new SideItem();
         sideItem.setName("Cold drink");
         List<SideItem> sideItemsList = new ArrayList<>();
         sideItemsList.add(sideItem);
-        Topping topping=new Topping(20,false);
-        List<Topping> toppingList=new ArrayList<>();
+        Topping topping = new Topping(20.0, false);
+        List<Topping> toppingList = new ArrayList<>();
         toppingList.add(topping);
 
-        OrderItem orderItem=new OrderItem();
+        OrderItem orderItem = new OrderItem();
         orderItem.setSideItems(sideItemsList);
         orderItem.setToppings(toppingList);
         orderItem.setPizzaRequest(pizzaRequest);

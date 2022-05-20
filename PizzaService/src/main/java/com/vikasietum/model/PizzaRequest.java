@@ -1,8 +1,5 @@
 package com.vikasietum.model;
 
-import com.vikasietum.model.Crust;
-import com.vikasietum.model.Pizza;
-
 public class PizzaRequest {
     Pizza pizza;
     String crust;

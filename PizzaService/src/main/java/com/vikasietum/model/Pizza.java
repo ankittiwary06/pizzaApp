@@ -1,7 +1,6 @@
 package com.vikasietum.model;
 
-public class Pizza
-{
+public class Pizza {
     private String name;
     private String size;
 
@@ -9,7 +8,7 @@ public class Pizza
     private Double smallPrice;                            // cost of small size pizza
     private Double mediumPrice;                            // cost of small size pizza
     private Double largePrice;                            // cost of small size pizza
-    private boolean  veg;                             // type of pizza non veg(0) or veg(1)
+    private boolean veg;                             // type of pizza non veg(0) or veg(1)
 
     public String getName() {
         return name;

@@ -1,6 +1,7 @@
 package com.vikasietum.controller;
 
-import com.vikasietum.model.*;
+import com.vikasietum.model.Order;
+import com.vikasietum.model.OrderResponse;
 import com.vikasietum.service.OrderService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,14 +10,11 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
 
-import java.util.ArrayList;
-import java.util.List;
 @RunWith(MockitoJUnitRunner.class)
 public class OrderControllerTest {
     @InjectMocks
-    OrderController orderController= new OrderController();
+    OrderController orderController = new OrderController();
 
     @Mock
     OrderService orderService;
