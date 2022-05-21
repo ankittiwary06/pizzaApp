@@ -7,10 +7,42 @@
     "veg": true
   },
   {
-    "name": "Veggie",
-    "smallPrice": 150,
-    "mediumPrice": 150,
-    "largePrice": 150,
+    "name": "Cheese and corn",
+    "smallPrice": 175,
+    "mediumPrice": 375,
+    "largePrice": 475,
     "veg": true
+  },
+  {
+    "name": "Paneer Tikka",
+    "smallPrice": 160,
+    "mediumPrice": 290,
+    "largePrice": 340,
+    "veg": true
+  },
+  {
+    "name": "Non-Veg Supreme",
+    "smallPrice": 190,
+    "mediumPrice": 325,
+    "largePrice": 425,
+    "veg": false
+  },
+  {
+    "name": "Chicken Tikka",
+    "smallPrice": 210,
+    "mediumPrice": 370,
+    "largePrice": 500,
+    "veg": false
+  },
+  {
+    "name": "Pepper Barbecue Chicken",
+    "smallPrice": 220,
+    "mediumPrice": 380,
+    "largePrice": 525,
+    "veg": false
   }
+
+
+
+
 ]
