@@ -15,7 +15,7 @@ import java.util.List;
 public class OrderValidator {
     @Value("${pizza.nonveg.topping.not.allowed}")
     private String nonVegToppingNotAllowed;
-    public void validate(Order order) throws Exception {
+    public void validate(Order order) throws OrderNotValidException {
         Iterator<OrderItem> it = order.getOrderItems().iterator();
         boolean type;
         while (it.hasNext()) {

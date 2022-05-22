@@ -8,6 +8,9 @@ public class Topping {
     Double price;
     boolean veg;
 
+    public Topping() {
+    }
+
     public Topping(Double price, boolean veg) {
         this.price = price;
         this.veg = veg;

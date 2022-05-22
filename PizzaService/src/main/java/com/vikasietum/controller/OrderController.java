@@ -1,5 +1,6 @@
 package com.vikasietum.controller;
 
+import com.vikasietum.exception.OrderNotValidException;
 import com.vikasietum.model.Order;
 import com.vikasietum.model.OrderResponse;
 import com.vikasietum.service.OrderService;
@@ -17,7 +18,7 @@ public class OrderController {
     OrderService orderService;
 
     @PostMapping("/order")
-    public ResponseEntity<OrderResponse> createOrder(@RequestBody Order order) {
+    public ResponseEntity<OrderResponse> createOrder(@RequestBody Order order) throws OrderNotValidException {
 
         OrderResponse orderResponse = orderService.createOrder(order);
         return new ResponseEntity<>(orderResponse, HttpStatus.CREATED);

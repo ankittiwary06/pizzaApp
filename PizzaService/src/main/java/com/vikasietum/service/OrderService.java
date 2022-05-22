@@ -17,14 +17,10 @@ public class OrderService {
     @Autowired
     OrderRepository orderRepository;
 
-    public OrderResponse createOrder(Order order) {
-        try {
-            orderValidator.validate(order);
-        } catch (OrderNotValidException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+    public OrderResponse createOrder(Order order) throws OrderNotValidException {
+
+        orderValidator.validate(order);
+
         String orderId = orderRepository.save(order);
         OrderResponse orderResponse = new OrderResponse(orderId, getOrderCost(order));
         return orderResponse;

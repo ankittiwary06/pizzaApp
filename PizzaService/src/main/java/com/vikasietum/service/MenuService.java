@@ -1,6 +1,7 @@
 package com.vikasietum.service;
 
 import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vikasietum.model.*;
@@ -31,7 +32,7 @@ public class MenuService {
         List<Pizza> pizzas = null;
         try {
             ObjectMapper mapper = new ObjectMapper();
-            pizzas = mapper.readValue(Paths.get(pizzaFilePath).toFile(), List.class);
+            pizzas = mapper.readValue(Paths.get(pizzaFilePath).toFile(), new TypeReference<List<Pizza>>(){});
         } catch (JsonMappingException e) {
             e.printStackTrace();
         } catch (JsonParseException e) {
@@ -50,7 +51,8 @@ public class MenuService {
         String toppingString = Files.readString(fileName);
         try {
             ObjectMapper mapper = new ObjectMapper();
-            toppings = mapper.readValue(toppingString, List.class);
+            toppings = mapper.readValue(toppingString, new TypeReference<List<Topping>>() {
+            });
         } catch (JsonMappingException e) {
             e.printStackTrace();
         } catch (JsonParseException e) {

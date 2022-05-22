@@ -1,5 +1,6 @@
 package com.vikasietum.controller;
 
+import com.vikasietum.exception.OrderNotValidException;
 import com.vikasietum.model.Order;
 import com.vikasietum.model.OrderResponse;
 import com.vikasietum.service.OrderService;
@@ -21,7 +22,7 @@ public class OrderControllerTest {
 
 
     @Test
-    public void createOrderTest() {
+    public void createOrderTest() throws OrderNotValidException {
 
         Order order = new Order();
 
