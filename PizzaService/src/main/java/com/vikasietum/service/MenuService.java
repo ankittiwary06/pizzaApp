@@ -80,7 +80,7 @@ public class MenuService {
         String sideItemString = Files.readString(fileName);
         try {
             ObjectMapper mapper = new ObjectMapper();
-            sideItems = mapper.readValue(sideItemString, List.class);
+            sideItems = mapper.readValue(sideItemString, new TypeReference<List<SideItem>>(){});
         } catch (JsonMappingException e) {
             e.printStackTrace();
         } catch (JsonParseException e) {
